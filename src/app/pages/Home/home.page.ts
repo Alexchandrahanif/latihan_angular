@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-home',
+  selector: 'home',
   templateUrl: './home.page.html',
 })
 export class HomeComponent {
@@ -13,5 +13,8 @@ export class HomeComponent {
   }
   goToRegister() {
     this.router.navigate(['/register']); // Pindah ke halaman register
+  }
+  goToDetails(id: number) {
+    this.router.navigate(['/detail', id]); // Navigasi ke '/details/:id'
   }
 }

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-home',
+  selector: 'notfound',
   templateUrl: './notfound.page.html',
 })
 export class NotFoundComponent {}
